@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse events</title>
+</head>
+<body>
+<input type="text" id="demo" onkeypress="test()">
+<p id="sample"></p>
+<button type="submit">Reset</button>
+<button type="submit">submit</button>
+</body>
+<script>
+    function test(){
+        var a = document.getElementById ("demo").value
+        document.getElementById ("sample").innerHTML = a
+        console.log("fn called")
+        
+    }
+</script>
+</html>
